@@ -153,3 +153,30 @@ p {
     font-size: 1.5rem !important;
     font-weight: bold;
 }
+
+/*Coaching*/
+#coaching .title{
+    font-family: 'roboto' !important;
+    font-size: 1.5rem;
+}
+
+#coaching .btn-unstyled.btn-link:focus,
+#coaching .btn-unstyled.btn-link:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-link {
+    color: black !important;
+    text-decoration: none;
+    font-family: 'roboto';
+}
+
+.card-body{
+    font-family: 'roboto';
+    font-size: 0.8rem;
+}
+
+#coaching .card{
+    margin: 0.5rem 0rem
+}
