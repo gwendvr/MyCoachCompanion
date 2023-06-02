@@ -1,0 +1,182 @@
+/*font*/
+@font-face {
+    font-family: 'Alfa';
+    src: url('./assets/font/AlfaSlabOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Abhaya';
+    src: url('./assets/font/AbhayaLibre-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('./assets/font/RobotoCondensed-Regular.ttf');
+}
+
+/*navbar*/
+.navbar-brand {
+    padding: 0;
+}
+
+.navbar-brand img {
+    height: 4.5rem;
+    padding: 5px;
+}
+
+.navbar-texts {
+    margin-top: 5px;
+    margin-right: 15px;
+}
+
+.nav-link {
+    padding: 0.05rem 0.3rem !important;
+}
+
+.navbar-texts {
+    display: flex !important;
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+    justify-content: flex-end;
+}
+
+.navbar-texts {
+    margin-top: 0px !important;
+    margin-right: 0px !important;
+}
+
+@media(min-width: 992px) {
+    .nav-item {
+        margin-right: 3rem;
+    }
+}
+
+a {
+    color: black !important;
+}
+
+nav {
+    height: 3.5rem;
+    background-color: #E73725;
+    font-family: 'Alfa';
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255, 255, 255) !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(255, 198, 198) !important;
+}
+
+.navbar-toggler {
+    position: absolute;
+    right: 0;
+}
+
+/*home*/
+.title {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-family: "Abhaya";
+}
+
+.underTitle {
+    font-size: 1rem;
+    color: #E73725;
+    font-family: 'Alfa';
+}
+
+p {
+    font-family: "roboto";
+    font-size: 0.8rem;
+}
+
+.embed-responsive-item {
+    height: 20rem;
+    margin-bottom: 2%;
+}
+
+.title-what {
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: "roboto";
+}
+
+@media(max-width: 992px) {
+    .embed-responsive-item {
+        height: 15rem !important;
+    }
+}
+
+/*carousel*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+.carousel-caption {
+    color: black;
+}
+
+@media(max-width: 992px) {
+    .img-carousel {
+        width: 80%;
+    }
+}
+
+/*card*/
+.col {
+    margin-top: 2rem !important;
+    margin-bottom: 1rem;
+}
+
+.card {
+    border: 2px solid black !important;
+}
+
+/*A propos*/
+#Apropos .title{
+    font-family: 'Alfa' !important;
+    font-size: 1.5rem;
+}
+
+.img-coach{
+    width: 30%;
+}
+
+.paragraph{
+    margin-top: 1rem;
+}
+
+.slogan{
+    font-size: 1.5rem !important;
+    font-weight: bold;
+}
+
+/*Coaching*/
+#coaching .title{
+    font-family: 'roboto' !important;
+    font-size: 1.5rem;
+}
+
+#coaching .btn-unstyled.btn-link:focus,
+#coaching .btn-unstyled.btn-link:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-link {
+    color: black !important;
+    text-decoration: none;
+    font-family: 'roboto';
+}
+
+.card-body{
+    font-family: 'roboto';
+    font-size: 0.8rem;
+}
+
+#coaching .card{
+    margin: 0.5rem 0rem
+}
