@@ -226,3 +226,14 @@ p {
 #tarif button{
     margin-top: 4%;
 }
+
+#tarif .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tarif .title{
+    font-family: 'Alfa' !important;
+    font-size: 1.5rem;
+}
