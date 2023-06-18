@@ -180,3 +180,9 @@ p {
 #coaching .card{
     margin: 0.5rem 0rem
 }
+
+/* Ref */
+#Referentiel .title{
+    font-family: 'Alfa' !important;
+    font-size: 1.5rem;
+}
