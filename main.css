@@ -136,34 +136,34 @@ p {
 }
 
 /*A propos*/
-#Apropos .title{
+#Apropos .title {
     font-family: 'Alfa' !important;
     font-size: 1.5rem;
 }
 
-.img-coach{
+.img-coach {
     width: 30%;
 }
 
-.paragraph{
+.paragraph {
     margin-top: 1rem;
 }
 
-.slogan{
+.slogan {
     font-size: 1.5rem !important;
     font-weight: bold;
 }
 
 /*Coaching*/
-#coaching .title{
+#coaching .title {
     font-family: 'roboto' !important;
     font-size: 1.5rem;
 }
 
 #coaching .btn-unstyled.btn-link:focus,
 #coaching .btn-unstyled.btn-link:active {
-  outline: none;
-  box-shadow: none;
+    outline: none;
+    box-shadow: none;
 }
 
 .btn-link {
@@ -172,27 +172,27 @@ p {
     font-family: 'roboto';
 }
 
-.card-body{
+.card-body {
     font-family: 'roboto';
     font-size: 0.8rem;
 }
 
-#coaching .card{
+#coaching .card {
     margin: 0.5rem 0rem
 }
 
 /* Ref */
-#Referentiel .title{
+#Referentiel .title {
     font-family: 'Alfa' !important;
     font-size: 1.5rem;
 }
 
 /* tarif */
-#tarif{
+#tarif {
     font-family: 'roboto';
 }
 
-#tarif p{
+#tarif p {
     margin-block-end: 0;
 }
 
@@ -211,29 +211,167 @@ p {
     flex-grow: 1;
 }
 
-#tarif .card-title{
+#tarif .card-title {
     font-size: 1.5rem;
 }
 
-#tarif .card-text{
+#tarif .card-text {
     font-size: 0.8rem;
 }
 
-.mgt-2{
+.mgt-2 {
     margin-top: 2%;
 }
 
-#tarif button{
+#tarif button {
     margin-top: 4%;
 }
 
-#tarif .container{
+#tarif .container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#tarif .title{
+#tarif .title {
     font-family: 'Alfa' !important;
     font-size: 1.5rem;
+}
+
+/* footer */
+footer a{
+    color: #929292 !important;
+}
+footer {
+    background-color: #26272b;
+    padding: 3% 0 2%;
+    color: #929292;
+    font-family: 'roboto';
+}
+
+footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5
+}
+
+footer hr.small {
+    margin: 20px 0
+}
+
+footer h6 {
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px
+}
+
+footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.links {
+    padding-left: 0;
+    list-style: none
+}
+
+.links.inline li {
+    display: inline-block
+}
+
+footer .social {
+    text-align: right
+}
+
+footer .social a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #33353d
+}
+
+@media (max-width:991px) {
+    footer [class^=col-] {
+        margin-bottom: 30px
+    }
+}
+
+@media (max-width:767px) {
+    footer {
+        padding-bottom: 0
+    }
+
+    footer .copyright-text,
+    footer .social {
+        text-align: center
+    }
+}
+
+.social {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+
+.social li {
+    display: inline-block;
+    margin-bottom: 4px
+}
+
+.social li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px
+}
+
+.social a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.social.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px
+}
+
+.social a.facebook:hover {
+    background-color: #3b5998
+}
+
+.social a.twitter:hover {
+    background-color: #00aced
+}
+
+.social a.linkedin:hover {
+    background-color: #007bb6
+}
+
+.social a.instagram:hover {
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(225,48,108,1) 60%, rgba(252,175,69,1) 100%);
+}
+
+@media (max-width:767px) {
+    .social li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600
+    }
 }
