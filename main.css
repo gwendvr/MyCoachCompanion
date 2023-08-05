@@ -1,3 +1,7 @@
+.inactif {
+    display: none !important;
+}
+
 /*font*/
 @font-face {
     font-family: 'Alfa';
@@ -238,15 +242,178 @@ p {
     font-size: 1.5rem;
 }
 
+.other {
+    margin-bottom: 5%;
+}
+
+/* Questionnaire */
+.img-question {
+    width: 15%;
+}
+
+.button-Q1,
+.button-Q2,
+.button-Q3,
+.button-Q4,
+.button-Q9,
+.button-Q10 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E73725;
+    font-family: "roboto";
+    border: none;
+}
+
+.button-Q1:hover, .button-Q2:hover,
+.button-Q3:hover,
+.button-Q4:hover,
+.button-Q9:hover,
+.button-Q10:hover {
+    background-color: #fb6756;
+}
+
+.button-Q9, .button-Q10{
+    justify-content: center;
+}
+
+.question .title {
+    font-family: "Alfa";
+}
+
+.question {
+    font-family: "roboto";
+    font-size: 1.5rem;
+}
+
+.arrow-button {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.btn-circle {
+    border-radius: 50%;
+    background-color: #E73725;
+    color: #fff;
+    box-shadow: none;
+}
+
+#question-12 .btn-circle {
+    border-radius: 5rem;
+    background-color: #E73725;
+    color: #fff;
+    box-shadow: none;
+}
+
+.btn-circle:hover {
+    background-color: #fc5441;
+}
+
+.custom-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background-color: #007bff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+#slider, #slider-1 {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background: #E73725;
+    outline: none;
+    opacity: 0.8;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+#slider:hover, #slider-1:hover {
+    opacity: 1;
+}
+
+#slider::-webkit-slider-thumb, #slider-1::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    background: url('./assets/caret-down-solid.svg');
+    background-size: 110%;
+    cursor: pointer;
+}
+
+#slider::-moz-range-thumb, #slider-1::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    border: 0;
+    background: url('./assets/caret-down-solid.svg');
+    background-size: 110%;
+    cursor: pointer;
+}
+
+#question-8 .slider-labels{
+    padding-left: 8px;
+    padding-right: 3px;
+}
+
+.text-slider{
+    font-family: 'roboto';
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.form-check-input:checked {
+    background-color: red;
+    border-color: red;
+}
+
+.form-check-input:focus {
+    border-color: #E73725;
+    box-shadow: 0px 0px 8px 2px #E73725;
+}
+
+.form-control, .red-border {
+    border-color: #E73725;
+}
+
+.form-control:focus {
+    border-color: #E73725;
+    box-shadow: 0px 0px 8px 2px #E73725;
+}
+
+.form-control{
+    width: 50% !important;
+}
+
+/* Pour afficher le texte "cm" à l'intérieur de l'input */
+.input-group-addon {
+    position: relative;
+    border-left: none;
+}
+
+.input-group-addon::after {
+    content: "cm";
+    position: absolute;
+    right: 5px;
+}
+
 /* footer */
-footer a{
+footer a {
     color: #929292 !important;
 }
+
 footer {
     background-color: #26272b;
     padding: 3% 0 2%;
     color: #929292;
     font-family: 'roboto';
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 footer hr {
@@ -365,7 +532,7 @@ footer .social a {
 }
 
 .social a.instagram:hover {
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(225,48,108,1) 60%, rgba(252,175,69,1) 100%);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(225, 48, 108, 1) 60%, rgba(252, 175, 69, 1) 100%);
 }
 
 @media (max-width:767px) {
