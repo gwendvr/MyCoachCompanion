@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Questionnaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../main.css">
+</head>
+
+<body>
+    <div class="navbar-texts">
+        <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+        <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+        <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand position-absolute" href="#">
+            <img src="../assets/logo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Apropos.html">A propos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./coaching.html">Le coaching personnel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./referentiel.html">Référentiel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./tarif.html">Tarif</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="question-1" class="question container text-center">
+        <h1 class="title">Questionnaire</h1>
+        <form id="questionForm">
+            <p class="question">Quel est votre objectif physique :</p>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn-lg button-Q1" type="button">
+                    Perte de poids
+                    <img class="img-question" src="../assets/coach.jpg" alt="Perte de poids">
+                </button>
+                <button class="btn-lg button-Q1" type="button">
+                    Se muscler
+                    <img class="img-question" src="../assets/coach.jpg" alt="Se muscler">
+                </button>
+                <button class="btn-lg button-Q1" type="button">
+                    Être en forme
+                    <img class="img-question" src="../assets/coach.jpg" alt="Être en forme">
+                </button>
+            </div>
+        </form>
+        <div class="arrow-button">
+            <button id="btn-pass-q2" class="btn btn-danger btn-circle btn-lg none" type="button">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <div id="question-2" class="question container text-center inactif">
+        <h1 class="title">Questionnaire</h1>
+        <form id="questionForm">
+            <p class="question">Quels sont vos autres objectifs :</p>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn-lg button-Q2" type="button">
+                    Réduction du stress
+                    <img class="img-question" src="../assets/coach.jpg" alt="">
+                </button>
+                <button class="btn-lg button-Q2" type="button">
+                    Me défouler
+                    <img class="img-question" src="../assets/coach.jpg" alt="">
+                </button>
+                <button class="btn-lg button-Q2" type="button">
+                    Se sentir en meilleur santé
+                    <img class="img-question" src="../assets/coach.jpg" alt="">
+                </button>
+                <button class="btn-lg button-Q2" type="button">
+                    Être régulier dans mes entrainements
+                    <img class="img-question" src="../assets/coach.jpg" alt="">
+                </button>
+                <button class="btn-lg button-Q2" type="button">
+                    Améliorer mon sommeil
+                    <img class="img-question" src="../assets/coach.jpg" alt="">
+                </button>
+            </div>
+        </form>
+        <div class="arrow-button">
+            <button id="btn-pass-q3" class="btn btn-danger btn-circle btn-lg none" type="button">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <div id="question-3" class="question container text-center inactif">
+        <h1 class="title">Questionnaire</h1>
+        <form id="questionForm">
+            <p class="question">Quel est votre morphologie :</p>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn-lg button-Q3" type="button">
+                    Ectomorphe
+                    <img class="img-question" src="../assets/coach.jpg" alt="">
+                </button>
+                <button class="btn-lg button-Q3" type="button">
+                    Mésomorphe
+                    <img class="img-question" src="../assets/coach.jpg" alt="">
+                </button>
+                <button class="btn-lg button-Q3" type="button">
+                    Endomorphe
+                    <img class="img-question" src="../assets/coach.jpg" alt="">
+                </button>
+            </div>
+        </form>
+        <div class="arrow-button">
+            <button id="btn-pass-q4" class="btn btn-danger btn-circle btn-lg none" type="button">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <div id="question-4" class="question container text-center inactif">
+        <h1 class="title">Questionnaire</h1>
+        <form id="questionForm">
+            <p class="question">Quels est votre niveau de masse grasse :</p>
+            <div class="container mt-5">
+                <input type="range" class="custom-range" id="slider" min="0" max="6" step="1">
+                <div class="slider-labels mt-3 d-flex justify-content-between">
+                    <label for="slider" class="text-slider">5-10 %</label>
+                    <label for="slider" class="text-slider">10-15 %</label>
+                    <label for="slider" class="text-slider">20-25 %</label>
+                    <label for="slider" class="text-slider">25-30 %</label>
+                    <label for="slider" class="text-slider">30-35 %</label>
+                    <label for="slider" class="text-slider">35-40 %</label>
+                    <label for="slider" class="text-slider">> 40 %</label>
+                </div>
+            </div>
+        </form>
+        <div class="arrow-button">
+            <button id="btn-pass-q5" class="btn btn-danger btn-circle btn-lg none" type="button">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <div id="question-5" class="question container text-center inactif">
+        <h1 class="title">Questionnaire</h1>
+        <form id="questionForm">
+            <p class="question">Quel est votre taille (en cm):</p>
+            <div class="container mt-3 d-flex justify-content-center">
+                <input type="number" id="taille" class="form-control" placeholder="cm">
+            </div>
+        </form>
+        <div class="arrow-button">
+            <button id="btn-pass-q6" class="btn btn-danger btn-circle btn-lg" type="button">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <div id="question-6" class="question container text-center inactif">
+        <h1 class="title">Questionnaire</h1>
+        <form id="questionForm">
+            <p class="question">Quel est votre âge :</p>
+            <div class="container mt-3 d-flex justify-content-center">
+                <input type="number" id="age" class="form-control" placeholder="ans">
+            </div>
+        </form>
+        <div class="arrow-button">
+            <button id="btn-pass-q7" class="btn btn-danger btn-circle btn-lg" type="button">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <div id="question-7" class="question container text-center inactif">
+        <h1 class="title">Questionnaire</h1>
+        <form id="questionForm">
+            <p class="question">Quel est votre poids actuel :</p>
+            <div class="container mt-3 d-flex justify-content-center">
+                <input type="number" id="poids" class="form-control" placeholder="kg">
+            </div>
+
+            <p class="question mt-3">Quel est votre objectif de poids :</p>
+            <div class="container mt-3 d-flex justify-content-center">
+                <input type="number" id="poids-obj" class="form-control" placeholder="kg">
+            </div>
+        </form>
+        <div class="arrow-button">
+            <button id="btn-pass-q8" class="btn btn-danger btn-circle btn-lg" type="button">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <div id="question-8" class="question container text-center inactif">
+        <h1 class="title">Questionnaire</h1>
+        <form id="questionForm">
+            <p class="question">Quel est ton niveau de forme :</p>
+            <div class="d-flex flex-column align-items-start">
+                <div class="container mt-5">
+                    <input type="range" class="custom-range" id="slider-1" min="0" max="9" step="1">
+                    <div class="slider-labels mt-3 d-flex justify-content-between">
+                        <label for="slider" class="text-slider" data-idx="1">1</label>
+                        <label for="slider" class="text-slider" data-idx="2">2</label>
+                        <label for="slider" class="text-slider" data-idx="3">3</label>
+                        <label for="slider" class="text-slider" data-idx="4">4</label>
+                        <label for="slider" class="text-slider" data-idx="5">5</label>
+                        <label for="slider" class="text-slider" data-idx="6">6</label>
+                        <label for="slider" class="text-slider" data-idx="7">7</label>
+                        <label for="slider" class="text-slider" data-idx="8">8</label>
+                        <label for="slider" class="text-slider" data-idx="9">9</label>
+                        <label for="slider" class="text-slider" data-idx="10">10</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-infos">6 - Sportif : Pour les personnes qui participent activement à des compétitions sportives ou à des entraînements spécifiques à un sport.</div>
+        </form>
+        <div class="arrow-button">
+            <button id="btn-pass-q9" class="btn btn-danger btn-circle btn-lg none" type="button">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <div id="question-9" class="question container text-center inactif">
+        <h1 class="title">Questionnaire</h1>
+        <form id="questionForm">
+            <p class="question">Quels sports vous aimez le plus :</p>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn-lg button-Q9" type="button">
+                    Entrainement à la maison
+                </button>
+                <button class="btn-lg button-Q9" type="button">
+                    Entrainement en salle de sports
+                </button>
+                <button class="btn-lg button-Q9" type="button">
+                    Course / footing
+                </button>
+                <button class="btn-lg button-Q9" type="button">
+                    Sport de combat (exemple : Boxe)
+                </button>
+                <button class="btn-lg button-Q9" type="button">
+                    Sports collectifs (football, rugby, handball, basketball)
+                </button>
+                <button class="btn-lg button-Q9" type="button">
+                    Aucun
+                </button>
+            </div>
+        </form>
+        <div class="arrow-button">
+            <button id="btn-pass-q10" class="btn btn-danger btn-circle btn-lg none" type="button">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <div id="question-10" class="question container text-center inactif">
+        <h1 class="title">Questionnaire</h1>
+        <form id="questionForm">
+            <p class="question">Quels sports vous aimez le plus :</p>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn-lg button-Q10" type="button">
+                    Oui, mais je n’ai pas eu la motivation de continuer 
+                </button>
+                <button class="btn-lg button-Q10" type="button">
+                    Oui, mais je n’avais pas de programmation précise ou ma programmation était trop facile / dur
+                </button>
+                <button class="btn-lg button-Q10" type="button">
+                    Oui, mais je n’avais pas trop le temps
+                </button>
+                <button class="btn-lg button-Q10" type="button">
+                    Non
+                </button>
+            </div>
+        </form>
+        <div class="arrow-button">
+            <button id="btn-pass-q11" class="btn btn-danger btn-circle btn-lg none" type="button">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <div id="question-11" class="question container text-center inactif">
+        <h1 class="title">Questionnaire</h1>
+        <form id="questionForm">
+            <p class="question">Quel temps hebdomadaire voulez-vous accorder à MyCoachCompanion  :</p>
+            <div class="container mt-3 d-flex justify-content-center">
+                <input type="number" id="seance" class="form-control" placeholder="Nombre de séance hebdomadaire">
+            </div>
+        </form>
+        <div class="arrow-button">
+            <button id="btn-pass-q12" class="btn btn-danger btn-circle btn-lg" type="button">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <div id="question-12" class="question container text-center inactif">
+        <h1 class="title">Questionnaire</h1>
+        <form id="questionForm">
+            <p class="question">Merci pour vos réponses ! MyCoachCompanion se charge d’analysé votre questionnaire et de vous contacter dans un délai de 48h.</p>
+            <div class="container mt-3 d-flex justify-content-center">
+                <input type="text" id="last" class="form-control" placeholder="Votre nom">
+            </div>
+            <div class="container mt-3 d-flex justify-content-center">
+                <input type="text" id="name" class="form-control" placeholder="Votre prénom">
+            </div>
+            <div class="container mt-3 d-flex justify-content-center">
+                <input type="text" id="mail" class="form-control" placeholder="Votre mail">
+            </div>
+            <div class="container mt-3 d-flex justify-content-center">
+                <input type="text" id="other" class="form-control" placeholder="Avez-vous quelque chose à ajouter ?">
+            </div>
+        </form>
+        <div class="arrow-button">
+            <button id="btn-end" class="btn btn-danger btn-circle btn-lg" type="button">
+                Envoyer
+            </button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/quizz.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
