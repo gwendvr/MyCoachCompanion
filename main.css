@@ -79,7 +79,7 @@ nav {
 }
 
 .nav-item.actif{
-    background: #eddd76;
+    background: #ffdd3d;
 }
 
 .nav-item.actif a{
@@ -87,7 +87,7 @@ nav {
 }
 
 .nav-item:hover{
-    background: #eddd76;
+    background: #ffdd3d;
 }
 
 .nav-item:hover a {
@@ -108,7 +108,7 @@ nav {
     margin-top: 1rem;
     font-size: 2rem;
     font-family: "Abhaya";
-    color: #eddd76;
+    color: #ffdd3d;
 }
 
 .underTitle {
@@ -131,7 +131,7 @@ p {
     font-weight: bold;
     font-size: 2rem;
     font-family: "roboto";
-    color: #eddd76;
+    color: #ffdd3d;
 }
 
 @media(max-width: 992px) {
@@ -216,6 +216,14 @@ p {
 #Referentiel .title {
     font-family: 'Alfa' !important;
     font-size: 1.5rem;
+}
+
+.man{
+    width: 17%;
+}
+
+.girl{
+    width: 15%;
 }
 
 /* tarif */
